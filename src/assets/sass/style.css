@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+  height: 14vh;
+  background-color: rgb(229, 235, 235);
+}
+
+.firstsection .image img {
+  width: 100%;
+  height: 100vh;
+}
+.firstsection .text {
+  margin-top: 150px;
+}
+.firstsection .text h1 {
+  font-size: 70px;
+}
+.firstsection .text p {
+  font: 1.2em sans-serif;
+  margin-top: 40px;
+}
+.firstsection .text .service {
+  background-color: hsl(213deg, 82%, 29%);
+  font-size: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.footer {
+  background-color: #101320;
+  height: 70vh;
+}
+.footer .column {
+  margin-top: 130px;
+}
+.footer .column p {
+  margin-top: 50px;
+  color: #fff;
+  font-size: 20px;
+}
+.footer .column h2 {
+  color: #F17D55;
+}
+.footer .lists {
+  color: #fff;
+}
+.footer .lists h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.footer .lists h6 {
+  font-size: 19px;
+}/*# sourceMappingURL=style.css.map */
