@@ -8,57 +8,41 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { LinkContainer } from 'react-router-bootstrap';
 import { NavLink } from 'react-router-dom';
 
-
 const Header = () => {
   return (
+<>
+    <Navbar expand="lg" className='header '>
+      <Container >
+        <img src="https://htmldemo.net/strane/strane/assets/images/logo/logo.png" alt="" />
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="mx-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll    >
 
-    // <Navbar expand="lg" className='header '>
-    //   <Container >
-    //     <img src="https://htmldemo.net/strane/strane/assets/images/logo/logo.png" alt="" />
-    //     <Navbar.Toggle aria-controls="navbarScroll" />
-    //     <Navbar.Collapse id="navbarScroll">
-    //       <Nav
-    //         className="mx-auto my-2 my-lg-0"
-    //         style={{ maxHeight: '100px' }}
-    //         navbarScroll    >
+       <LinkContainer to='/home'><NavLink > Home </NavLink></LinkContainer>    
+       <LinkContainer to='/service'><NavLink > Service </NavLink></LinkContainer>
+       <LinkContainer to='/project'><NavLink > Project </NavLink></LinkContainer>
+       <LinkContainer to='/pages'><NavLink > Pages </NavLink></LinkContainer>
+       <LinkContainer to='/blogs'><NavLink > Blogs </NavLink></LinkContainer>
+       <LinkContainer to='/contact'><NavLink > Contact </NavLink></LinkContainer>
+           
+  
+          
 
-    //         <LinkContainer to='/'><Nav.Link> Home </Nav.Link> </LinkContainer>
+          </Nav>
+          <Button variant="outline-success">Get Started</Button>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 
-    //         {/* <LinkContainer to='/about'> <NavDropdown title="Service" id="navbarScrollingDropdown">
-    //               <NavDropdown.Item >Services</NavDropdown.Item>
-    //               <NavDropdown.Item > Service Details</NavDropdown.Item>
-    //             </NavDropdown></LinkContainer>
+</>
+    // <>
+    //   <NavLink to='/'>Home</NavLink>
+    //   <NavLink to='/about'>About</NavLink>
 
-    //             <LinkContainer to='/contact'>   <NavDropdown title="Project" id="navbarScrollingDropdown">
-    //               <NavDropdown.Item >Project</NavDropdown.Item>
-    //               <NavDropdown.Item >Project Details</NavDropdown.Item>
-    //             </NavDropdown></LinkContainer> */}
-    //         {/* 
-    //             <LinkContainer>  <NavDropdown title="Pages" id="navbarScrollingDropdown">
-    //               <NavDropdown.Item href="#action3">About Us</NavDropdown.Item>
-    //               <NavDropdown.Item href="#action4">
-    //                 FAQ
-    //               </NavDropdown.Item>
-
-    //             </NavDropdown></LinkContainer>
-
-    //             <LinkContainer>  <NavDropdown title="Blogs" id="navbarScrollingDropdown">
-    //               <NavDropdown.Item >Blog List Left Sidebar</NavDropdown.Item>
-    //               <NavDropdown.Item > Blog List Right Sidebar</NavDropdown.Item>
-    //             </NavDropdown></LinkContainer>
-
-    //             <LinkContainer>     <Nav.Link> Contact </Nav.Link></LinkContainer> */}
-
-    //       </Nav>
-    //       <Button variant="outline-success">Get Started</Button>
-    //     </Navbar.Collapse>
-    //   </Container>
-    // </Navbar>
-    <>
-      <NavLink to='/'>Home</NavLink>
-      <NavLink to='/about'>About</NavLink>
-
-    </>
+    // </>
 
   )
 }

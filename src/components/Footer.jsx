@@ -33,7 +33,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
                     </div>
                     <div className="col-12 col-sm-12 col-md-4">
                     <div className="column">
-                            <h3>Company</h3>
+                            <h3>Quick Links</h3>
                             <h6 className='mt-5'>Privacy Policy</h6>
                             <h6 className='mt-3'>Discussion</h6>
                             <h6 className='mt-3'>Terms&Conditions</h6>
@@ -43,7 +43,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
                         </div>
                         <div className="col-12 col-sm-12 col-md-4">
                         <div className="column">
-                            <h3>Company</h3>
+                            <h3>Product</h3>
                             <h6 className='mt-5'>Presentation</h6>
                             <h6 className='mt-3'>E-Books</h6>
                             <h6 className='mt-3'>Management Tool</h6>
@@ -58,25 +58,20 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
  </div>
 
  <div className="end ">
- <Navbar collapseOnSelect expand="lg"  variant="dark">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+  <div className="container web">
+  <div className="left">
+    <p>&copy;2022 Strane.</p>
+    <p>Made with by  </p>
+    <h5>HasThemes</h5>
+  </div>
+  <div className="right">
+    <p>Terms of Service*</p>
+    <p>Privacy Policy *</p>
+    <p>  Sitemap</p>
+ 
+  </div>
+  </div>
+ 
  </div>
       </section>
     )
